@@ -12,15 +12,15 @@ Tip: Cuidado con las condiciones de borde, analiza los casos de 90 y 180.
 =end
 
 def scan_addicts2(array)
-    results = [0]
+    results = [ ]
     n = array.count
     n.times do |i|
-        if array [i] <= 180
-            result.push "mal"
+        if array [i] >= 180
+            result.push 'mal'
         elsif array [i] >=90
-            result.push "mejorable"
+            result.push 'mejorable'
         else
-            result.push "bien"
+            result.push 'bien'
         end
     end
     result 
